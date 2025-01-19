@@ -1,5 +1,7 @@
 # Interactive Card Component
 
+![Interactive Card Screenshot](./src/images/interactive-card.png)
+
 A simple, interactive profile card React component featuring:
 
 - Interactive like button with state management

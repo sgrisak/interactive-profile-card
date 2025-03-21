@@ -40,11 +40,11 @@ const InteractiveCard = () => {
             className="flex items-center space-x-2 text-gray-600 hover:text-red-500 transition-colors"
           >
             <Heart
-              className={`w-5 h-5 ${
+              className={`w-5 h-5 flex items-center justify-center${
                 isLiked ? "fill-red-500 text-red-500" : ""
               }`}
             />
-            <span>{likes}</span>
+            <span className="w-4 text-center">{likes}</span>
           </button>
 
           <div className="relative">
@@ -56,7 +56,7 @@ const InteractiveCard = () => {
             </button>
 
             {showShareMenu && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+              <div className="absolute bottom-0 mb-8 w-48 bg-white rounded-md border border-gray-200 shadow-lg py-1">
                 <a
                   href="#"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
